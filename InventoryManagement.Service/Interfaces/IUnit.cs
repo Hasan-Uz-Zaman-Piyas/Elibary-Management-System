@@ -9,8 +9,8 @@ namespace InventoryManagement.Service.Interfaces
 {
     public interface IUnit
     {
-        List<Unit> GetItems();
-        Unit GetUnit(int id);
+        List<Unit> GetItems(string ShortProperty, SortOrder sortOrder );// read all
+        Unit GetUnit(int id); // read particular item
         Unit Create(Unit unit);
         Unit Edit(Unit unit);
         Unit Delete (Unit unit);
